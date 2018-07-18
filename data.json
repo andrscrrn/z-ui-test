@@ -1,0 +1,132 @@
+{
+  "components": [
+    {
+      "name": "HeaderMenu",
+      "data": {
+        "title": "Rule of Thumb.",
+        "items": [
+          {
+            "label": "Past Trials",
+            "url": "#"
+          },
+          {
+            "label": "How It Works",
+            "url": "#"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hero",
+      "data": {
+        "headline": "What's your opinion on",
+        "title": "Pope Francis?",
+        "content":
+          "He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)",
+        "url": "#",
+        "bottomline": "What's Your Verdict?",
+        "daysLeft": 22
+      }
+    },
+    {
+      "name": "InfoBox",
+      "data": {
+        "headline": "Speak out. Be heard.",
+        "boldText": "Be counted",
+        "text":
+          "Rule of Thumb is a crowd sourced court of public opinion where anyone and everyone can speak out and speak freely. It’s easy: You share your opinion, we analyze and put the data in a public report."
+      }
+    },
+    {
+      "name": "RulingsGrid",
+      "data": {
+        "title": "Previous Rulings",
+        "rulings": [
+          {
+            "name": "Kanye West",
+            "description":
+              "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+            "imageUrl": "",
+            "url": "#",
+            "timestamp": 1527811200,
+            "category": "Entertainment",
+            "goodVotes": 64,
+            "badVotes": 36
+          },
+          {
+            "name": "Mark Zuckerberg",
+            "description":
+              "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+            "imageUrl": "",
+            "url": "#",
+            "timestamp": 1527811200,
+            "category": "Business",
+            "goodVotes": 36,
+            "badVotes": 64
+          },
+          {
+            "name": "Cristina Fernández de Kirchner",
+            "description":
+              "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+            "imageUrl": "",
+            "url": "#",
+            "timestamp": 1527811200,
+            "category": "Politics",
+            "goodVotes": 36,
+            "badVotes": 64
+          },
+          {
+            "name": "Malala Yousafzai",
+            "description":
+              "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
+            "imageUrl": "",
+            "url": "#",
+            "timestamp": 1527811200,
+            "category": "Entertainment",
+            "goodVotes": 64,
+            "badVotes": 36
+          }
+        ]
+      }
+    },
+    {
+      "name": "SubmitBox",
+      "data": {
+        "text": "Is there anyone else you would want us to add?",
+        "button": {
+          "text": "Submit a Name",
+          "url": "#"
+        }
+      }
+    },
+    {
+      "name": "Footer",
+      "data": {
+        "links": [
+          {
+            "label": "Terms and Conditions",
+            "url": "#"
+          },
+          {
+            "label": "Privacy Policy",
+            "url": "#"
+          },
+          {
+            "label": "Contact Us",
+            "url": "#"
+          }
+        ],
+        "socialLinks": [
+          {
+            "iconIdentifier": "facebook",
+            "url": "#"
+          },
+          {
+            "iconIdentifier": "twitter",
+            "url": "#"
+          }
+        ]
+      }
+    }
+  ]
+}
