@@ -4,5 +4,5 @@ export default {
   InfoBox: "InfoBox",
   RulingsGrid: "RulingsGrid",
   SubmitBox: "SubmitBox",
-  Footer: "Footer"
+  Footer: "Footer",
 };

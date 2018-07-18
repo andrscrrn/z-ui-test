@@ -4,7 +4,7 @@ import {
   InfoBox,
   RulingsGrid,
   SubmitBox,
-  Footer
+  Footer,
 } from "../components";
 
 import ComponentTypes from "../constants/ComponentTypes";
@@ -15,7 +15,7 @@ const COMPONENTS_BY_TYPE = {
   [ComponentTypes.InfoBox]: InfoBox,
   [ComponentTypes.RulingsGrid]: RulingsGrid,
   [ComponentTypes.SubmitBox]: SubmitBox,
-  [ComponentTypes.Footer]: Footer
+  [ComponentTypes.Footer]: Footer,
 };
 
 export default component => COMPONENTS_BY_TYPE[component];

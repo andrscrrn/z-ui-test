@@ -1,4 +1,6 @@
-import data from "../data.json";
+import React from "react";
+import PropTypes from "prop-types";
+import initialData from "../data.json";
 import getComponent from "../utils/getComponent";
 import css from "../styles/main.scss";
 
@@ -10,6 +12,10 @@ const Page = ({ components }) => {
   return <div className={css.main}>{componentsToRender}</div>;
 };
 
-Page.getInitialProps = () => data;
+Page.getInitialProps = () => initialData;
+
+Page.propTypes = {
+  components: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+};
 
 export default Page;
