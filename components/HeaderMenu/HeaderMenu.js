@@ -38,6 +38,11 @@ export default class HeaderMenu extends PureComponent {
 }
 
 HeaderMenu.propTypes = {
-  title: PropTypes.string.isRequired,
-  items: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+  title: PropTypes.string,
+  items: PropTypes.arrayOf(PropTypes.shape()),
+};
+
+HeaderMenu.defaultProps = {
+  title: "",
+  items: [],
 };
