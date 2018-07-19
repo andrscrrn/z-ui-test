@@ -26,6 +26,11 @@
     font-size: 32px;
   }
 
+  &__list {
+    align-items: center;
+    display: flex;
+  }
+
   &__list-item {
     display: inline-block;
     margin-right: 50px;
@@ -39,5 +44,6 @@
     color: $white;
     font-size: 16px;
     font-weight: 300;
+    letter-spacing: 0.2px;
   }
 }

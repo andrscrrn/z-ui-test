@@ -2,6 +2,8 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
 
+import SearchIcon from "../../Icons/Search";
+
 import "./HeaderMenu.scss";
 
 export default class HeaderMenu extends PureComponent {
@@ -13,7 +15,7 @@ export default class HeaderMenu extends PureComponent {
       <div className="HeaderMenu">
         <div className="HeaderMenu__container">
           <h2 className="HeaderMenu__title">{title}</h2>
-          <ul>
+          <ul className="HeaderMenu__list">
             {[...items, loginItem].map(({ label, url }) => (
               <li key={label} className="HeaderMenu__list-item">
                 <Link href={url}>
@@ -21,6 +23,13 @@ export default class HeaderMenu extends PureComponent {
                 </Link>
               </li>
             ))}
+            <li className="HeaderMenu__list-item">
+              <Link href="#">
+                <a>
+                  <SearchIcon />
+                </a>
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
