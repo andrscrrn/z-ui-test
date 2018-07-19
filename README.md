@@ -16,13 +16,13 @@ This project was built with good practices and specific choices based on the pro
 Install node dependencies executing `npm install`.
 
 ## Coverage
-Execute `npm run coverage`
+Execute `npm run coverage`.
 
 ## Linting
-Execute `npm run lint`
+Execute `npm run lint`.
 
 ## Unit Testing
-Execute `npm t`
+Execute `npm t`.
 
 ## Local Build
 To build and serve locally execute `npm run build && npm start`.
