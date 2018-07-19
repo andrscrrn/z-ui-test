@@ -1,7 +1,24 @@
 # z-ui-test
 
-This project is being deployed with [now](https://zeit.co/now) to [https://z-ui-test-pvqobpyawx.now.sh](https://z-ui-test-pvqobpyawx.now.sh).
+This project was build with good practices and specific choices based on the project needs:
+- Built with [`next`](https://nextjs.org/), a lightweight framework for static and server‑rendered applications.
+- Deployed with [`now`](https://zeit.co/now) to [https://z-ui-test-pvqobpyawx.now.sh](https://z-ui-test-pvqobpyawx.now.sh).
+- Javascript linting with [`eslint`](https://eslint.org/) and [`prettier`](https://github.com/prettier/prettier).
+- Sass linting with [`sass-lint`](https://github.com/sasstools/sass-lint).
+- Unit testing with [`jest`](https://jestjs.io/).
+- Git hooks with [`husky`](https://github.com/typicode/husky).
 
-To build locally execute `npm run build && npm start`
+## Dependencies
+Install dependencies executing `npm install`.
 
-To run a development build execute `npm run develop`
+## Coverage
+Execute `npm run coverage`
+
+## Linting
+Execute `npm run build`
+
+## Local Build
+To build and serve locally execute `npm run build && npm start`.
+
+## Local Development
+To serve a development build execute `npm run develop`.
