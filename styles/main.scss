@@ -1,5 +1,13 @@
+@import 'responsive';
+
 $font-size: 50px;
 
 .main {
+  @include small {
+    font-size: 12px;
+  }
+  @include medium {
+    font-size: 30px;
+  }
   font-size: $font-size;
 }

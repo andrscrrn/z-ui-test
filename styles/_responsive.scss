@@ -1,0 +1,14 @@
+$tablet-min-width: 768px;
+$desktop-min-width: 1024px;
+
+@mixin small {
+  @media (max-width: #{$tablet-min-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (min-width: #{$tablet-min-width}) and (max-width: #{$desktop-min-width - 1px}) {
+    @content;
+  }
+}
