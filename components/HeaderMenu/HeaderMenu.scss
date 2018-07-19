@@ -1,3 +1,4 @@
+@import "../../styles/responsive";
 @import "../../styles/colors";
 
 .HeaderMenu {
@@ -5,11 +6,38 @@
   $light-gray: rgba(0, 0, 0, .53);
   background: linear-gradient(180deg, $gray 0%, $light-gray 49%, $transparent 100%);
   color: $white;
+  display: flex;
   height: 150px;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 100%;
 
+  &__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: $desktop-max-width;
+    height: 40px;
+    width: 100%;
+  }
+
   &__title {
     font-size: 32px;
+  }
+
+  &__list-item {
+    display: inline-block;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    color: $white;
+    font-size: 16px;
+    font-weight: 300;
   }
 }

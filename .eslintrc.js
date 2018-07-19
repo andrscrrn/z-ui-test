@@ -44,5 +44,7 @@ module.exports = {
         order: ["static-methods", "lifecycle", "everything-else", "render"],
       },
     ],
+
+    "jsx-a11y/anchor-is-valid": [false],
   },
 };
