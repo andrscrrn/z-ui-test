@@ -19,7 +19,10 @@ Install node dependencies executing `npm install`.
 Execute `npm run coverage`
 
 ## Linting
-Execute `npm run build`
+Execute `npm run lint`
+
+## Unit Testing
+Execute `npm t`
 
 ## Local Build
 To build and serve locally execute `npm run build && npm start`.
