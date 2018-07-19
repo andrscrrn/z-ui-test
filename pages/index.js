@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import initialData from "../data/initial.json";
 import getComponent from "../utils/getComponent";
@@ -9,7 +9,7 @@ const Page = ({ components }) => {
     const Component = getComponent(name);
     return <Component key={name} {...data} />;
   });
-  return <Fragment>{componentsToRender}</Fragment>;
+  return <div className="container">{componentsToRender}</div>;
 };
 
 Page.getInitialProps = () => initialData;

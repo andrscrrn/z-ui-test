@@ -1,5 +1,7 @@
 @import "../node_modules/reset-css/sass/reset";
 
+@import "./responsive";
+
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -10,4 +12,10 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+.container {
+  max-width: $desktop-max-width;
+  position: relative;
+  margin: 0 auto;
 }
