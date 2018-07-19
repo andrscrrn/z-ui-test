@@ -8,8 +8,12 @@ This project was built with good practices and specific choices based on the pro
 - Unit testing with [`jest`](https://jestjs.io/).
 - Git hooks with [`husky`](https://github.com/typicode/husky).
 
-## Dependencies
-Install dependencies executing `npm install`.
+## Requirements
+- Install Ruby with Homebrew: `brew install ruby`.
+- Install scss-lint: `gem install scss_lint`.
+
+## Node Dependencies
+Install node dependencies executing `npm install`.
 
 ## Coverage
 Execute `npm run coverage`

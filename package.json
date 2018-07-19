@@ -10,7 +10,8 @@
     "test": "jest",
     "coverage": "jest --coverage && open coverage/lcov-report/index.html",
     "lint": "npm-run-all lint:*",
-    "lint:js": "eslint ./"
+    "lint:js": "eslint ./",
+    "lint:scss": "scss-lint || true"
   },
   "license": "ISC",
   "dependencies": {
