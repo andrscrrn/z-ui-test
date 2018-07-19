@@ -2,7 +2,7 @@
 
 This project was built with good practices and specific choices based on the project needs:
 - Built with [`next`](https://nextjs.org/), a lightweight framework for static and server‑rendered applications.
-- Deployed with [`now`](https://zeit.co/now) to [https://z-ui-test-pvqobpyawx.now.sh](https://z-ui-test-pvqobpyawx.now.sh).
+- Deployed with [`now`](https://zeit.co/now) to [https://z-ui-test-bwcpkdzotu.now.sh](https://z-ui-test-bwcpkdzotu.now.sh).
 - Javascript linting with [`eslint`](https://eslint.org/) and [`prettier`](https://github.com/prettier/prettier).
 - Sass linting with [`sass-lint`](https://github.com/sasstools/sass-lint).
 - Unit testing with [`jest`](https://jestjs.io/).
