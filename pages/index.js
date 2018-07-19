@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import initialData from "../data.json";
+import initialData from "../data/initial.json";
 import getComponent from "../utils/getComponent";
 import css from "../styles/main.scss";
 
