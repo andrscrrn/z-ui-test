@@ -1,11 +1,9 @@
 const path = require("path");
-// ESLint configuration
+
 // http://eslint.org/docs/user-guide/configuring
 module.exports = {
-  //   parser: "babel-eslint",
-
   extends: [
-    "airbnb", // includes react
+    "airbnb", // Includes React
     "plugin:prettier/recommended",
     "prettier",
     "prettier/react",
@@ -38,13 +36,6 @@ module.exports = {
     // Allow .js files to use JSX syntax
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md
     "react/jsx-filename-extension": ["error", { extensions: [".js", ".jsx"] }],
-
-    // incompatible with Redux component testing pattern
-    "import/no-named-as-default": "off",
-
-    // Functional and class components are equivalent from React’s point of view
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/prefer-stateless-function.md
-    "react/prefer-stateless-function": "off",
 
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/sort-comp.md
     "react/sort-comp": [
