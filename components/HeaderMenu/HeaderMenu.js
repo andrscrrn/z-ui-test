@@ -2,7 +2,7 @@ import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
 
-import SearchIcon from "../../icon-components/Search";
+import SearchIcon from "../../icons/Search";
 
 import "./HeaderMenu.scss";
 
