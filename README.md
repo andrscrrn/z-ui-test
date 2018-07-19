@@ -1,6 +1,6 @@
 # z-ui-test
 
-This project was build with good practices and specific choices based on the project needs:
+This project was built with good practices and specific choices based on the project needs:
 - Built with [`next`](https://nextjs.org/), a lightweight framework for static and server‑rendered applications.
 - Deployed with [`now`](https://zeit.co/now) to [https://z-ui-test-pvqobpyawx.now.sh](https://z-ui-test-pvqobpyawx.now.sh).
 - Javascript linting with [`eslint`](https://eslint.org/) and [`prettier`](https://github.com/prettier/prettier).
