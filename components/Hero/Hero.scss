@@ -6,8 +6,9 @@
   height: 740px;
   width: 100%;
   position: relative;
+  color: $white;
 
-  &__content {
+  &__container {
     max-width: $desktop-min-width;
     height: 100%;
     margin: 0 auto;
@@ -21,23 +22,131 @@
     height: 450px;
     width: 500px;
 
-    &-content {
-      background-color: $gray;
+    &-container {
       height: 370px;
       width: 100%;
+      position: relative;
+      &-background {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        &::after{
+          height: 740px;
+          width: 1280px;
+          position: absolute;
+          top: -170px;
+          left: -128px;
+          content: " ";
+          background: url("/static/pope.jpg");
+          filter: blur(30px);
+        }
+        &::before {
+          content: " ";
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(51,51,51,.45);
+          z-index: 1;
+        }
+      }
+      &-content {
+        z-index: 1;
+        position: relative;
+        padding: 40px 64px 40px 32px;
+      }
     }
 
-    &-buttons {
-      height: 80px;
-      width: 100%;
+    &-headline {
+      font-size: 16px;
+      font-weight: 200;
+      margin-bottom: 5px;
+    }
+
+    &-title {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    &-content {
+      font-size: 21px;
+      font-weight: 200;
+      line-height: 24px;
+      margin-bottom: 24px;
+    }
+
+    &-cta {
+      font-size: 14px;
+      font-weight: 200;
+      cursor: pointer;
+      margin-bottom: 35px;
+      display: inline-block;
+    }
+
+    &-bottomline {
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    &-button {
+      border: 0;
+      width: 50%;
+      height: 100%;
+      cursor: pointer;
+
+      &--thumbs-up {
+        background-color: rgba(28, 180, 187, .9);
+      }
+
+      &--thumbs-down {
+        background-color: rgba(255, 173, 29, .9);
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+      &-container {
+        height: 80px;
+        width: 100%;
+        z-index: 1;
+        position: relative;
+      }
     }
   }
 
   &__counter {
     height: 50px;
     width: 100%;
-    background-color: gray;
+    background-color: rgba(51,51,51,.3);
     position: absolute;
     bottom: 0;
+    display: flex;
+    &-label {
+      width: 32%;
+      padding-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      font-size: 13px;
+      font-weight: 300;
+    }
+    &-days {
+      position: absolute;
+      right: 0;
+      width: 68%;
+      height: 100%;
+      background-color: rgba(255,255,255,.7);
+      font-size: 37px;
+      font-weight: 300;
+      line-height: 45px;
+      color: #464646;
+      padding-left: 20px;
+      &-number {
+        font-weight: 400;
+      }
+    }
   }
 }

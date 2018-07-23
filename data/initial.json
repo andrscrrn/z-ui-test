@@ -46,7 +46,7 @@
             "name": "Kanye West",
             "description":
               "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-            "imageUrl": "",
+            "imageUrl": "static/kanye-west.jpg",
             "url": "#",
             "timestamp": 1527811200,
             "category": "Entertainment",
@@ -57,7 +57,7 @@
             "name": "Mark Zuckerberg",
             "description":
               "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-            "imageUrl": "",
+            "imageUrl": "static/mark-zuckerberg.jpg",
             "url": "#",
             "timestamp": 1527811200,
             "category": "Business",
@@ -68,7 +68,7 @@
             "name": "Cristina Fernández de Kirchner",
             "description":
               "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-            "imageUrl": "",
+            "imageUrl": "static/cristina-fernandez-de-klirchner.jpg",
             "url": "#",
             "timestamp": 1527811200,
             "category": "Politics",
@@ -79,7 +79,7 @@
             "name": "Malala Yousafzai",
             "description":
               "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.",
-            "imageUrl": "",
+            "imageUrl": "static/malala-yousafzai.jpg",
             "url": "#",
             "timestamp": 1527811200,
             "category": "Entertainment",

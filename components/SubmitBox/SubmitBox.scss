@@ -1,0 +1,9 @@
+@import "../../styles/colors";
+@import "../../styles/responsive";
+
+.SubmitBox {
+    max-width: $desktop-min-width;
+    height: 80px;
+    background-color: $gray;
+    margin: 0 auto;
+}

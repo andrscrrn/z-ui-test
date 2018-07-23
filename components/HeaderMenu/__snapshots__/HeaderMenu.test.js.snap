@@ -34,7 +34,7 @@ exports[`HeaderMenu renders correctly 1`] = `
           href="#"
         >
           <a>
-            <Search />
+            <SearchIcon />
           </a>
         </Link>
       </li>

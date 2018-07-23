@@ -1,0 +1,45 @@
+@import "../../styles/colors";
+@import "../../styles/responsive";
+
+.InfoBox {
+    background-color: $gray;
+    max-width: $desktop-min-width;
+    margin: 0 auto;
+    height: 100px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__left-container {
+        width: 37%;
+        height: 100%;
+        padding: 20px 0px 20px 30px;
+    }
+    &__headline {
+        font-size: 22px;
+        font-weight: 300;
+    }
+    &__boldText {
+        font-size: 38px;
+        font-weight: 700;
+    }
+    &__text {
+        font-size: 15px;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        line-height: 23px;
+        margin-left: 10px;
+    }
+    &__close-button {
+        border: 0;
+        background: none;
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+}
