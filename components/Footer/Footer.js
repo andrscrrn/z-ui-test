@@ -6,11 +6,16 @@ import "./Footer.scss";
 export default function Footer({ links }) {
   return (
     <div className="Footer">
-      {links.map(({ label, url }) => (
-        <a href={url} key={label}>
-          {label}
-        </a>
-      ))}
+      <div className="Footer__links">
+        {links.map(({ label, url }) => (
+          <a className="Footer__link" href={url} key={label}>
+            {label}
+          </a>
+        ))}
+      </div>
+      <div className="Footer__social-links">
+        <span>Follow Us</span>
+      </div>
     </div>
   );
 }

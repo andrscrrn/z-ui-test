@@ -2,9 +2,25 @@
 @import "../../styles/responsive";
 
 .Footer {
-    max-width: $desktop-min-width;
-    margin: 0 auto;
-    margin-top: 35px;
-    padding: 35px 0;
-    border-top: black dotted 1px;
+  background-image: linear-gradient(to right, #333 10%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 10px 1px;
+  background-repeat: repeat-x;
+  max-width: $desktop-min-width;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 35px 0;
+  font-size: 12px;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    color: $dark-gray;
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

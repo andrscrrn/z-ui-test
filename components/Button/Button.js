@@ -3,9 +3,9 @@ import propTypes from "prop-types";
 
 import "./Button.scss";
 
-export default function Button({ children }) {
+export default function Button({ children, className }) {
   return (
-    <button className="Button" type="button">
+    <button className={`Button ${className}`} type="button">
       {children}
     </button>
   );
@@ -13,8 +13,10 @@ export default function Button({ children }) {
 
 Button.propTypes = {
   children: propTypes.string,
+  className: propTypes.string,
 };
 
 Button.defaultProps = {
   children: "Button",
+  className: "",
 };

@@ -2,8 +2,39 @@
 @import "../../styles/responsive";
 
 .SubmitBox {
-    max-width: $desktop-min-width;
-    height: 80px;
-    background-color: $gray;
-    margin: 0 auto;
+  max-width: $desktop-min-width;
+  height: 80px;
+  background-image: url("/static/footer-bg.jpg");
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $transparent-white;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+    font-weight: 300;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__button {
+    font-size: 20px;
+    border: 2px solid $black;
+    color: $dark-gray;
+    background-color: transparent;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
 }

@@ -8,8 +8,11 @@ import "./SubmitBox.scss";
 export default function SubmitBox({ text, button }) {
   return (
     <div className="SubmitBox">
-      {text}
-      <Button>{button.text}</Button>
+      <div className="SubmitBox__content">
+        {text}
+        <Button className="SubmitBox__button">{button.text}</Button>
+      </div>
+      <div className="SubmitBox__overlay" />
     </div>
   );
 }
