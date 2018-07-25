@@ -7,11 +7,11 @@
         "items": [
           {
             "label": "Past Trials",
-            "url": "#"
+            "url": "past-trials"
           },
           {
             "label": "How It Works",
-            "url": "#"
+            "url": "how-it-works"
           }
         ]
       }

@@ -6,7 +6,7 @@
   background-position: top;
   background-size: 10px 1px;
   background-repeat: repeat-x;
-  max-width: $desktop-min-width;
+  max-width: $desktop-content-min-width;
   margin: 0 auto;
   margin-top: 35px;
   padding: 35px 0;
@@ -14,6 +14,11 @@
   font-weight: 300;
   display: flex;
   justify-content: space-between;
+
+  @include from-medium {
+    padding-left: $spacing;
+    padding-right: $spacing;
+  }
 
   &__link {
     color: $dark-gray;

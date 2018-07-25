@@ -2,7 +2,7 @@
 @import "../../styles/responsive";
 
 .SubmitBox {
-  max-width: $desktop-min-width;
+  max-width: $desktop-content-min-width;
   height: 80px;
   background-image: url("/static/footer-bg.jpg");
   margin: 0 auto;
@@ -27,6 +27,10 @@
     font-weight: 300;
     justify-content: space-between;
     height: 100%;
+
+    @include from-medium {
+      font-size: 20px;
+    }
   }
 
   &__button {

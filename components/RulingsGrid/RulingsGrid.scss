@@ -2,8 +2,12 @@
 @import "../../styles/responsive";
 
 .RulingsGrid {
-  max-width: $desktop-min-width;
+  max-width: $desktop-content-min-width;
   margin: 35px auto;
+
+  @include from-medium {
+    max-width: 600px;
+  }
 
   &__title {
     font-size: 40px;
@@ -16,5 +20,13 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
     grid-auto-rows: 550px;
+
+    @include from-medium {
+      grid-template-columns: 1fr;
+    }
+
+    @include small {
+      grid-auto-rows: 350px;
+    }
   }
 }

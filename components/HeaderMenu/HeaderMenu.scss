@@ -12,11 +12,16 @@
   width: 100%;
   z-index: 1;
 
+  @include from-medium {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
   &__container {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    max-width: $desktop-min-width;
+    max-width: $desktop-content-min-width;
     height: 40px;
     width: 100%;
     margin-top: 32px;
@@ -29,6 +34,10 @@
   &__list {
     align-items: center;
     display: flex;
+
+    @include small {
+      display: none;
+    }
   }
 
   &__list-item {

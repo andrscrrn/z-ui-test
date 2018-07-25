@@ -2,44 +2,88 @@
 @import "../../styles/responsive";
 
 .InfoBox {
-    background-color: $gray;
-    max-width: $desktop-min-width;
-    margin: 0 auto;
-    height: 100px;
-    margin-top: 32px;
+  background-color: $gray;
+  max-width: $desktop-content-min-width;
+  margin: 0 auto;
+  height: 100px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include medium {
+    max-width: 100%;
+    height: auto;
+    margin-left: $spacing;
+    margin-right: $spacing;
+  }
+
+  @include small {
+    height: auto;
+    flex-direction: column;
+  }
+
+  &__left-container {
+    width: 37%;
+    height: 100%;
+    padding: 20px 0px 20px 30px;
+
+    @include medium {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include small {
+      width: auto;
+      height: auto;
+      padding: $spacing;
+    }
+  }
+
+  &__headline {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  &__boldText {
+    font-size: 38px;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    line-height: 23px;
+    margin-left: 10px;
+
+    @include medium {
+      flex: 2;
+      margin-right: 10px;
+    }
+
+    @include small {
+      margin: 0;
+      padding: 0 $spacing $spacing;
+    }
+  }
+
+  &__close-button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    &__left-container {
-        width: 37%;
-        height: 100%;
-        padding: 20px 0px 20px 30px;
+    margin-right: 20px;
+
+    @include small {
+      display: none;
     }
-    &__headline {
-        font-size: 22px;
-        font-weight: 300;
-    }
-    &__boldText {
-        font-size: 38px;
-        font-weight: 700;
-    }
-    &__text {
-        font-size: 15px;
-        font-weight: 300;
-        display: flex;
-        align-items: center;
-        line-height: 23px;
-        margin-left: 10px;
-    }
-    &__close-button {
-        border: 0;
-        background: none;
-        cursor: pointer;
-        width: 32px;
-        height: 32px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 20px;
-    }
+  }
 }
