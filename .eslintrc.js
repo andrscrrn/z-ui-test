@@ -9,7 +9,7 @@ module.exports = {
     "prettier/react",
   ],
 
-  plugins: ["prettier"],
+  plugins: ["babel", "prettier"],
 
   env: {
     jest: true,
@@ -46,5 +46,7 @@ module.exports = {
     ],
 
     "jsx-a11y/anchor-is-valid": [false],
+
+    "babel/semi": 0,
   },
 };

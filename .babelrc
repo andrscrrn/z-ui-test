@@ -1,13 +1,16 @@
 {
   "env": {
     "development": {
-      "presets": ["next/babel"]
+      "presets": ["next/babel"],
+      "plugins": ["transform-class-properties"]
     },
     "production": {
-      "presets": ["next/babel"]
+      "presets": ["next/babel"],
+      "plugins": ["transform-class-properties"]
     },
     "test": {
-      "presets": [["next/babel", { "preset-env": { "modules": "commonjs" } }]]
+      "presets": [["next/babel", { "preset-env": { "modules": "commonjs" } }]],
+      "plugins": ["transform-class-properties"]
     }
   }
 }

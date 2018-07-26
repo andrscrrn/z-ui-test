@@ -3,9 +3,9 @@ import propTypes from "prop-types";
 
 import "./Button.scss";
 
-export default function Button({ children, className }) {
+export default function Button({ children, className, onClick }) {
   return (
-    <button className={`Button ${className}`} type="button">
+    <button className={`Button ${className}`} type="button" onClick={onClick}>
       {children}
     </button>
   );
@@ -14,9 +14,11 @@ export default function Button({ children, className }) {
 Button.propTypes = {
   children: propTypes.string,
   className: propTypes.string,
+  onClick: propTypes.func,
 };
 
 Button.defaultProps = {
   children: "Button",
   className: "",
+  onClick: () => {},
 };

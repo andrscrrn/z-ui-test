@@ -77,7 +77,6 @@
 
       &--left {
         background-color: $transparent-blue;
-        width: 64%;
 
         svg {
           margin-left: 10px;
@@ -86,7 +85,6 @@
 
       &--right {
         background-color: $transparent-orange;
-        width: 36%;
         justify-content: flex-end;
 
         svg {
