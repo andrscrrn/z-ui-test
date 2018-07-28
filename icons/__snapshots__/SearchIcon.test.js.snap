@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Search renders correctly 1`] = `
+exports[`SearchIcon renders correctly 1`] = `
 <svg
   height="26px"
   width="24px"

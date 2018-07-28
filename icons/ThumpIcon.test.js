@@ -2,11 +2,11 @@ import React from "react";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
 
-import SearchIcon from "./SearchIcon";
+import ThumpIcon from "./ThumpIcon";
 
-describe("SearchIcon", () => {
+describe("ThumpIcon", () => {
   it("renders correctly", () => {
-    const wrapper = shallow(<SearchIcon />);
+    const wrapper = shallow(<ThumpIcon />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });
